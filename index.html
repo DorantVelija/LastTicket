@@ -3,8 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
+        <div class="landing-page">
+            <div class="landing-page-img">
+                <h1>1° Travel Site in
+                    North Macedonia</h1>
+            </div>
+            <div class="landing-form">
+                <div class="landing-form-container">
+                <form action="">
+                    <div class="form-top">
+                        <div class="radio-inputs">
+                            <input type="radio" name="way" id="one-way" value="One Way">
+                            <label for="one-way">One Way</label>
+                            <input type="radio" name="way" id="round-trip" value="Round Trip">
+                            <label for="round-trip">Round trip</label>
+                        </div>
+                    </div>
+
+                    <div class="form-bottom">
+
+                       <!-- location input -->
+                        <div class="inputContainer">
+                            <div class="cityInput">
+                            <label for="">From</label>
+                            <input type="text" name="" id="fromCity">
+                        </div>
+                            <div class="cityInput">
+                                <label for="">To</label>
+                                <input type="text" name="" id="toCity">
+                            </div>
+
+                        </div>
+
+
+                        <!--duration-input-->
+                        <div class="inputContainer">
+                            <div class="dateInput">
+                            <label for="fromDate">Departure</label>
+                            <input type="date" name="" id="fromDate" placeholder="From">
+                        </div>
+                            <div class="dateInput">
+                                <label for="toDate">Return</label>
+                                <input type="date" name="" id="toDate" placeholder="Until">
+                            </div>
+                        </div>
+
+
+                      <!-- passenger input -->
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <input type="submit" value="Search" id="form-submit-button">
+                    </div>
+
+                </form>
+                </div>
+            </div>
+        </div>
 </body>
 </html>

@@ -1,0 +1,73 @@
+.landing-page{
+    height: 100vh;
+}
+.landing-page-img{
+    background-image:url("images/landing-bg.png");
+    background-size: cover;
+    font-size: 2em;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.landing-form{
+    width: 75vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+.landing-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffffff;
+    width: 100%;
+    height: 25vh;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    transform: translateY(-10vh);
+    color: #9DADFF;
+}
+
+.form-top, .form-bottom{
+    padding:1vh 0;
+}
+.form-bottom{
+    display: flex;
+}
+.radio-inputs{
+    margin: 0 30px;
+}
+.cityInput, .dateInput{
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+}
+.inputContainer{
+    display: flex;
+    margin: 0 30px;
+}
+input{
+    color: #9DADFF;
+    width: 10vw;
+    height: 40px;
+    border: #9DADFF 2px solid;
+    border-radius: 5px;
+}
+input:focus{
+    outline: #9DADFF;
+}
+.radio-inputs input{
+    width: 25px;
+    height: 25px;
+}
+input[type="radio"]{
+    accent-color: #7387ff;
+    background-color: #ffffff;
+}
+input[type="radio"]:hover{
+    accent-color: #575757;
+}
+

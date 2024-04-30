@@ -26,6 +26,27 @@ body{
     font-size: 3rem;
 }
 
+.smallNavbar{
+    display: none;
+    background-color: #9DADFF;
+    width: 100%;
+    height: 60%;
+}
+
+.smallNavbar ul{
+    list-style-type: none;
+    background-color: #5E70D0;
+}
+
+.smallNavbar ul li{
+    border-bottom: 1px solid black;
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 50px;
+    margin-top: 1em;
+    padding: .2em;
+}
+
 a{
     text-decoration: none;
 }
@@ -38,7 +59,6 @@ a{
 #burgerMenu{
     display: none;
 }
-
 
 
 @media (max-width: 768px) {

@@ -11,10 +11,7 @@
         <div class="navbar">
             <h3>LastTicket</h3>
             <img id="burgerMenu" src="burger_menu.svg" onclick="toggleMenu()">
-
             <ul id="navbarUl">
-                
-
                 <a href="home.html">
                     <li>Home</li>
                 </a>
@@ -25,8 +22,37 @@
                     <li>Contact</li>
                 </a>
             </ul>
-        </div>
+    </div>
     </nav>
+
+    <div class="smallNavbar">
+        <ul>
+            <a href="home.html">
+                <li>Home</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+</div>
+
+<script>
+    const smallNavbar = document.querySelector(".smallNavbar");
+    const burgerMenu = document.querySelector("#burgerMenu");
+
+    const toggleMenu = () =>{
+        if(smallNavbar.style.display === "none" || smallNavbar.style.display === ""){
+            smallNavbar.style.display = "flex";
+        }else{
+            smallNavbar.style.display = "none";
+        }
+    }
+
+
+</script>
     
 </body>
 </html>

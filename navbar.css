@@ -30,22 +30,30 @@ body{
     display: none;
     background-color: #9DADFF;
     width: 100%;
-    height: 60%;
 }
 
 .smallNavbar ul{
     list-style-type: none;
     background-color: #5E70D0;
+    width: 100%;
 }
 
 .smallNavbar ul li{
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid white; */
     color: white;
     font-size: 1.2rem;
     margin-right: 50px;
     margin-top: 1em;
+    margin-bottom: 1em;
     padding: .2em;
 }
+
+.smallNavbar ul li:active{
+    background-color: white;
+    color: #9DADFF;
+    border-radius: .6em;
+}
+    
 
 a{
     text-decoration: none;

@@ -1,6 +1,4 @@
-.landing-page{
-    height: 100vh;
-}
+
 .landing-page-img{
     background-image:url("images/landing-bg.png");
     background-size: cover;
@@ -12,7 +10,7 @@
     color: #ffffff;
 }
 .landing-form{
-    width: 75vw;
+    width: 70vw;
     margin-left:auto;
     margin-right:auto;
 }
@@ -32,19 +30,23 @@
 }
 
 .form-top, .form-bottom{
-    padding:1vh 0;
+
+    align-items: flex-end;
 }
 .form-bottom{
     display: flex;
+
 }
 .radio-inputs{
     margin: 0 30px;
 }
-.cityInput, .dateInput{
+.cityInput, .dateInput,.passengerContainer{
     display: flex;
     flex-direction: column;
     margin: 1px;
+    justify-content: center;
 }
+
 .inputContainer{
     display: flex;
     margin: 0 30px;
@@ -58,6 +60,8 @@ input{
 }
 input:focus{
     outline: #9DADFF;
+    color: #9DADFF;
+    font-weight: 600;
 }
 .radio-inputs input{
     width: 25px;
@@ -68,6 +72,76 @@ input[type="radio"]{
     background-color: #ffffff;
 }
 input[type="radio"]:hover{
-    accent-color: #575757;
+    accent-color: #5E70D0;
 }
+#form-submit-button{
+    background-color: #9DADFF;
+    color: #ffffff;
+    margin: 2px;
+    transition: 200ms;
+}
+#form-submit-button:hover{
+    scale: 1.02;
+    font-weight: 600;
+    transition: 200ms;
+}
+select{
+    height: 43px;
+    width: 45px;
+    margin: 2px;
+    border: 2px solid #9DADFF;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #9DADFF;
+}
+.landing-cards{
+    display: flex;
+    color: #9DADFF;
+    width: 60vw;
+    padding-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.landing-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    height: 25vh;
+}
+.landing-card div{
 
+}
+.landing-card p{
+    font-size: 0.9em;
+    text-align: center;
+}
+.landing-card h2{
+    font-size: 1em;
+    text-align: center;
+}
+.landing-card-button{
+    justify-items: flex-end;
+}
+#health_safety{
+    border: 2px solid #9DADFF;
+    border-radius: 10px;
+}
+.landing-card-icon{
+    height: 7vh;
+}
+#enviromentally-friendly{
+    padding-bottom: 30px;
+}
+.landing-card-button{
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 200ms;
+}
+.landing-card-button:hover{
+    cursor: pointer;
+    color: #5E70D0;
+    font-weight: 700;
+    transition: 200ms;
+ }

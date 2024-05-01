@@ -182,6 +182,98 @@
                 </div>
             </div>
         </div>
+        <div class="borderBreak"></div>
+
+        <div class="landing-discover-offers">
+            <div class="landing-offers">
+                <div class="offer-left">
+
+                </div>
+                <div class="offer-right">
+                    <h1>Discover all of our offers</h1>
+                    <p>Choose from 1,500 travel destinations in 30 countries</p>
+                    <a>Learn More ></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="borderBreak"></div>
+        <div class="buying-tickers">
+            <h1>Buying Your Bus Tickets is Easy with LastTicket</h1>
+            <p>Our website makes it easy to plan your journey, find the cheapest bus fares,
+                and purchase your bus tickets securely. Whether you are planning or booking last-minute trip,
+                we makes buying bus tickets a breeze. Plus, with our convenient e-ticket system,
+                you can board your bus without the hassle of paper tickets as your phone will serve as your ticket!</p>
+        </div>
+        <div class="about-btm-banner" >
+    <div class="btm-banner-container">
+        <div>
+            <h1><span class="num" data-val="30">00</span>+</h1>
+            <p>LOCATIONS</p>
+        </div>
+
+        <div>
+            <h1> <span class="num" data-val="1500">0000</span>+</h1>
+            <p>TRAVEL DESTINATIONS</p>
+        </div>
+
+        <div>
+            <h1><span class="num" data-val="100">00</span>+</h1>
+            <p>BUS LINES PER DAY</p>
+        </div>
+
+        <div>
+            <h1><span class="num" data-val="1">0</span>*</h1>
+            <p>IN THE COUNTRY</p>
+        </div>
+
+    </div>
+</div>
+        <div class="borderBreak"></div>
+
+    <script>
+        function startCountersWhenInView(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+
+                    let valueDisplays = document.querySelectorAll('.num');
+                    let interval = 1500;
+
+                    valueDisplays.forEach((valueDisplay) => {
+                        let startValue = 0;
+
+                        if (valueDisplay.getAttribute("data-val") == 1500) {
+                            startValue = 1300;
+                        }
+
+
+                        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                        let duration = Math.floor(interval / endValue);
+                        let counter = setInterval(function() {
+                            startValue += 1;
+                            valueDisplay.textContent = startValue;
+                            if (startValue == endValue) {
+                                clearInterval(counter);
+                            }
+                        }, duration);
+
+                        observer.unobserve(entry.target);
+                    });
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(startCountersWhenInView, {
+            threshold: 0.8
+        });
+
+        const targetElement = document.querySelector('.about-btm-banner');
+
+        if (targetElement) {
+            observer.observe(targetElement);
+        }
+
+    </script>
 
 
 

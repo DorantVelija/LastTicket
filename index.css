@@ -145,3 +145,81 @@ select{
     font-weight: 700;
     transition: 200ms;
  }
+
+
+.landing-discover-offers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    color: #9DADFF;
+}
+.landing-offers{
+    border: 2px #9DADFF solid;
+    border-radius: 10px;
+    display: flex;
+    width: 60vw;
+    height: 20vh;
+}
+.offer-left{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 32%;
+    background-image: url("images/offer-pic-v2.png");
+}
+.offer-right{
+    padding-left: 50px;
+}
+.offer-right h1{
+    margin-bottom: 0;
+}
+.offer-right a{
+    padding: 10px;
+    background-color: #9DADFF;
+    color: #ffffff;
+    border-radius: 7px;
+    transition: 200ms;
+}
+.offer-right a:hover{
+    transition: 200ms;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.buying-tickers{
+    width: 60vw;
+    color: #9DADFF;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 13vh 0;
+}
+
+
+.about-btm-banner{
+    margin: 1vh 0 2vh;
+    height: 25vh;
+    background-color: #9DADFF;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btm-banner-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.btm-banner-container h1{
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+}
+.btm-banner-container p{
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.btm-banner-container div{
+    padding: 50px;
+    padding-bottom: 0;
+}

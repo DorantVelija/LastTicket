@@ -61,5 +61,8 @@ a:visited{
     .footerLinks, .footer > p{
         font-size: .6em;   
     }
+    .footerNames{
+        color: #9DADFF;
+    }
 
 }

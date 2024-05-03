@@ -271,6 +271,13 @@ textarea{
     border-radius: 5px;
     resize: none;
     margin-left: 3px;
+    color: #9DADFF;
+}
+textarea::placeholder{
+    color: #9DADFF;
+}
+textarea:focus{
+    outline: none;
 }
 .contact-left{
     color: #9DADFF;
@@ -282,7 +289,14 @@ textarea{
     font-size: 1.3em;
     word-spacing: 8px;
 }
-
+#small-map{
+    display: none;
+}
+.contact-location{
+    color: #9DADFF;
+    text-align: center;
+    padding: 5vh 0;
+}
 
 
 @media screen and (min-width: 1px) and (max-width: 768px){
@@ -348,6 +362,35 @@ textarea{
     .borderBreak{
         display: none;
     }
-    .passengerContainer{
+
+
+    /* CONTACT PAGE */
+    .contact-img h1{
+        font-size: 1.3em;
+        padding: 6vh;
+    }
+    .contact-form{
+        flex-direction: column;
+    }
+    .contact-left h1{
+        text-align: center;
+    }
+    .contact-left{
+        width: 65vw;
+        padding: 20px;
+    }
+    .contact-form-right-container input{
+        width: 70vw;
+    }
+    .contact-form-right-container textarea{
+        width: 70vw;
+    }
+    #large-map{
+        display: none;
+    }
+    #small-map{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

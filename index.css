@@ -30,12 +30,10 @@
 }
 
 .form-top, .form-bottom{
-
     align-items: flex-end;
 }
 .form-bottom{
     display: flex;
-
 }
 .radio-inputs{
     margin: 0 30px;
@@ -72,7 +70,7 @@ input[type="radio"]{
     background-color: #ffffff;
 }
 input[type="radio"]:hover{
-    accent-color: #5E70D0;
+    accent-color: #ffffff;
 }
 #form-submit-button{
     background-color: #9DADFF;
@@ -81,6 +79,7 @@ input[type="radio"]:hover{
     transition: 200ms;
 }
 #form-submit-button:hover{
+    cursor: pointer;
     scale: 1.02;
     font-weight: 600;
     transition: 200ms;
@@ -222,4 +221,71 @@ select{
 .btm-banner-container div{
     padding: 50px;
     padding-bottom: 0;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px){
+    .landing-page-img h1{
+        width: 90vw;
+        font-size: 1em;
+        text-align: center;
+    }
+    .about-btm-banner{
+        height: 105vh;
+    }
+    .btm-banner-container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .landing-form{
+        width: 90vw;
+    }
+    .landing-form-container{
+        height: 50vh;
+        width: 100%;
+    }
+    .form-bottom{
+        display: block;
+        flex-direction: column !important;
+    }
+    input,select{
+        width: 200px;
+        height: 30px;
+        font-size: 1em;
+        border-radius: 5px;
+        margin: 0;
+    }
+    label{
+        font-size: 1em;
+    }
+    select,#form-submit-button{
+        margin-top: 6px;
+        width: 206px;
+    }
+    .inputContainer{
+        flex-direction: column;
+    }
+    .landing-form{
+        height: 60vh;
+    }
+    .landing-card{
+        margin-top: 10vh;
+        width: 100%;
+    }
+    .landing-offers{
+        height: 70%;
+        width: 80vw;
+        flex-direction: column;
+    }
+    .offer-right{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .landing-discover-offers{
+        margin: 5vh 0;
+    }
+    .borderBreak{
+        display: none;
+    }
+    .passengerContainer{
+    }
 }

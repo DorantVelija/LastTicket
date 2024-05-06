@@ -13,7 +13,7 @@
 <nav>
     <div class="navbar">
         <h3 >LastTicket</h3>
-        <img id="burgerMenu" src="burger_menu.svg" onclick="toggleMenu()">
+        <img id="burgerMenu" src="navbar/burger_menu.svg" onclick="toggleMenu()">
         <ul id="navbarUl">
             <a href="index.html">
                 <li>Home</li>
@@ -41,6 +41,24 @@
         </a>
     </ul>
 </div>
+<script>
+    const smallNavbar = document.querySelector(".smallNavbar");
+    const burgerMenu = document.querySelector("#burgerMenu");
+
+    const toggleMenu = () =>{
+        if(smallNavbar.style.display === "none" || smallNavbar.style.display === ""){
+            smallNavbar.style.display = "flex";
+        }else{
+            smallNavbar.style.display = "none";
+        }
+    }
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            smallNavbar.style.display = "none";
+        }
+    });
+</script>
 
 <div class="contact-img">
     <h1>Have any questions for us?</h1>

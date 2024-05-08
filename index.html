@@ -126,15 +126,16 @@
                 </div>
             </div>
         </div>
+            <!--Cards with text-->
         <div class="landing-cards">
             <div class="landing-card">
                 <div class="landing-card-icon">
-                    <img src="images/flag.png" ></img>
+                    <img src="images/flag.png" draggable="false"></img>
                 </div>
                 <div class="landing-card-text">
                     <h2>Largest regional bus network</h2>
                     <p>
-                        Choose from the our various bus networks on our website and
+                        Choose from our various bus networks on our website and
                         explore Macedonia
                     </p>
                 </div>
@@ -144,12 +145,12 @@
             </div>
             <div class="landing-card">
                 <div class="landing-card-icon">
-                    <img src="images/comfort-on-board.png"></img>
+                    <img src="images/comfort-on-board.png" draggable="false"></img>
                 </div>
                 <div class="landing-card-text">
                     <h2>Comfort on board</h2>
                     <p>
-                        Keep yourself and others safe while traveling with us.
+                        Enjoy a cozy and comfortable journey onboard with spacious seating and amenities tailored for your relaxation.
                     </p>
                 </div>
                 <div class="landing-card-button">
@@ -158,12 +159,12 @@
             </div>
             <div class="landing-card" id="margin-bottom">
                 <div class="landing-card-icon">
-                    <img src="images/enviromentally-friendly.svg"></img>
+                    <img src="images/enviromentally-friendly.svg" draggable="false"></img>
                 </div>
                 <div class="landing-card-text">
                     <h2>Environmentally Friendly</h2>
                     <p>
-                        Keep yourself and others safe while traveling with us.
+                        Sustainability fuels us, from sourcing to reducing carbon footprint, paving the way for a greener tomorrow.
                     </p>
                 </div>
                 <div class="landing-card-button">
@@ -172,12 +173,12 @@
             </div>
             <div class="landing-card">
                 <div class="landing-card-icon">
-                    <img src="images/health-and-safety.svg" id="health_safety"></img>
+                    <img src="images/health-and-safety.svg" id="health_safety" draggable="false"></img>
                 </div>
                 <div class="landing-card-text">
                     <h2>Health and Safety</h2>
                     <p>
-                        Keep yourself and others safe while traveling with us
+                        We prioritize health and safety, implementing measures to ensure a worry-free experience for all passengers.
                     </p>
                 </div>
                 <div class="landing-card-button">
@@ -185,6 +186,7 @@
                 </div>
             </div>
         </div>
+        <!--Line div to break the page into sections-->
         <div class="borderBreak"></div>
 
         <div class="landing-discover-offers">
@@ -209,51 +211,53 @@
                 you can board your bus without the hassle of paper tickets as your phone will serve as your ticket!</p>
         </div>
         <div class="about-btm-banner" >
-    <div class="btm-banner-container">
-        <div>
-            <h1><span class="num" data-val="30">00</span>+</h1>
-            <p>LOCATIONS</p>
-        </div>
+            <!--Number scrolling banner for a few different sections-->
+        <div class="btm-banner-container">
+            <div>
+                <h1><span class="num" data-val="30">00</span>+</h1>
+                <p>LOCATIONS</p>
+            </div>
 
-        <div>
-            <h1> <span class="num" data-val="1500">0000</span>+</h1>
-            <p>TRAVEL DESTINATIONS</p>
-        </div>
+            <div>
+                <h1> <span class="num" data-val="1500">0000</span>+</h1>
+                <p>TRAVEL DESTINATIONS</p>
+            </div>
 
-        <div>
-            <h1><span class="num" data-val="100">00</span>+</h1>
-            <p>BUS LINES PER DAY</p>
-        </div>
+            <div>
+                <h1><span class="num" data-val="100">00</span>+</h1>
+                <p>BUS LINES PER DAY</p>
+            </div>
 
-        <div>
-            <h1><span class="num" data-val="1">0</span>*</h1>
-            <p>IN THE COUNTRY</p>
-        </div>
+            <div>
+                <h1><span class="num" data-val="1">0</span>*</h1>
+                <p>IN THE COUNTRY</p>
+            </div>
 
+        </div>
     </div>
-</div>
         <div class="borderBreak"></div>
 
     <script>
+        // Start the counter when screen is in view
         function startCountersWhenInView(entries, observer) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
 
-                    let valueDisplays = document.querySelectorAll('.num');
-                    let interval = 1500;
+                    let valueDisplays = document.querySelectorAll('.num');// get values from all elements with class num
+                    let interval = 1500;        // duration of the whole animation
 
                     valueDisplays.forEach((valueDisplay) => {
-                        let startValue = 0;
+                        let startValue = 0;         // starting value for the numbers
 
-                        if (valueDisplay.getAttribute("data-val") == 1500) {
-                            startValue = 1300;
+                        if (valueDisplay.getAttribute("data-val") == 1500) {   // if our target is 1500 we start from
+                            startValue = 1300;                             // 1300 since it would take too long from 0
                         }
 
 
-                        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                        let endValue = parseInt(valueDisplay.getAttribute("data-val")); // parse into int since by default it comes as a string
                         let duration = Math.floor(interval / endValue);
                         let counter = setInterval(function() {
-                            startValue += 1;
+                            startValue += 1;                // increment the value by one, until we reach our end value
                             valueDisplay.textContent = startValue;
                             if (startValue == endValue) {
                                 clearInterval(counter);
@@ -267,8 +271,8 @@
         }
 
         const observer = new IntersectionObserver(startCountersWhenInView, {
-            threshold: 0.8
-        });
+            threshold: 0.8          // how much of the div is needed to be in view before the animation starts
+        });                         // .8 means 80%
 
         const targetElement = document.querySelector('.about-btm-banner');
 
@@ -277,6 +281,8 @@
         }
 
     </script>
+
+ <!--Top destinations and connections div-->
 <div class="top-dest-container">
     <h3 class="title">Top Destinations and Connections</h3>
     <div class="groupContainer">
@@ -329,7 +335,7 @@
 </div>
 
 
-
+<!--Footer-->
 <footer>
     <div class="footer">
         <div class="borderBreak"></div>

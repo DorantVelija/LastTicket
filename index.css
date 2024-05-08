@@ -192,8 +192,6 @@ select{
     margin-right: auto;
     padding: 13vh 0;
 }
-
-
 .about-btm-banner{
     margin: 1vh 0 10vh;
     height: 25vh;
@@ -226,8 +224,9 @@ select{
 
 /*CONTACT  PAGE*/
 .contact-img{
-    background-image: url("images/contact-img.png");
-    background-size: cover;
+    background-image: url("images/city-bus-bar.jpg");
+    background-size: 100%;
+    background-position: 0px 500px;
     text-align: center;
     font-size: 2em;
     color: #ffffff;
@@ -347,6 +346,11 @@ textarea:focus{
         margin-top: 10vh;
         width: 100%;
     }
+    @media (max-height: 800px) and (min-width:768px){
+        .landing-card-text h2{
+            margin-top: 40px;
+        }
+    }
     .landing-offers{
         height: 70%;
         width: 80vw;
@@ -371,6 +375,7 @@ textarea:focus{
     }
     .contact-form{
         flex-direction: column;
+        width:100%;
     }
     .contact-left h1{
         text-align: center;

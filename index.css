@@ -363,6 +363,13 @@ textarea:focus{
     border: 2px #9DADFF solid;
     border-radius: 10px;
 }
+.about-network{
+    text-align: center;
+}
+.about-network img{
+    width: 65vw;
+    height: 55vw;
+}
 
 
 @media screen and (min-width: 1px) and (max-width: 768px){

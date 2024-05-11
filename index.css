@@ -298,6 +298,73 @@ textarea:focus{
 }
 
 
+/*ABOUT PAGE*/
+.about-img{
+    background-image: url("images/public-transport-city.jpg");
+    background-size: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    height: 25vh;
+}
+.about-img h1{
+    margin: 0;
+    padding: 8vh;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.about-environment{
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #9DADFF;
+    padding: 6vh 0;
+}
+.about-onboard{
+    margin: 10vh;
+    width: 65vw;
+    color: #9DADFF;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.onboard-flex{
+    display: flex;
+    justify-content: center;
+}
+.onboard-left, .onboard-right{
+    padding: 3vh;
+}
+.onboard-card{
+    text-align: justify;
+    display: flex;
+}
+.onboard-card img{
+   padding: 10px;
+    width: 4vw;
+    height: 4vw;
+}
+.onboard-text{
+    width: 80%;
+    padding-left: 1vw;
+}
+.about-health{
+    margin: 10vh;
+    color: #9DADFF;
+    text-align: center;
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-health ul{
+    text-align: justify;
+}
+.about-health img{
+    border: 2px #9DADFF solid;
+    border-radius: 10px;
+}
+
+
 @media screen and (min-width: 1px) and (max-width: 768px){
     .landing-page-img h1{
         width: 90vw;

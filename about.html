@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <link rel="stylesheet" href="footer/footer.css">
+    <link rel="stylesheet" href="topDestinations/topDest.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav>
+    <div class="navbar">
+        <h3 >LastTicket</h3>
+        <img id="burgerMenu" src="navbar/burger_menu.svg" onclick="toggleMenu()">
+        <ul id="navbarUl">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </div>
+</nav>
+
+<div class="smallNavbar">
+    <ul>
+        <a href="index.html">
+            <li>Home</li>
+        </a>
+        <a href="about.html">
+            <li>About</li>
+        </a>
+        <a href="contact.html">
+            <li>Contact</li>
+        </a>
+    </ul>
+</div>
+
+<script>
+    const smallNavbar = document.querySelector(".smallNavbar");
+    const burgerMenu = document.querySelector("#burgerMenu");
+
+    const toggleMenu = () =>{
+        if(smallNavbar.style.display === "none" || smallNavbar.style.display === ""){
+            smallNavbar.style.display = "flex";
+        }else{
+            smallNavbar.style.display = "none";
+        }
+    }
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            smallNavbar.style.display = "none";
+        }
+    });
+</script>
+
+
+
+<div class="about-img">
+
+    <h1>Learn more about us</h1>
+
+</div>
+
+
+<div  class="about-environment">
+    <img src="images/enviromentally-friendly.svg" alt="">
+    <h2>Environmentally Friendly</h2>
+    <p>We are driven by our purpose more than ever to drive sustainable and affordable travel for everyone to experience the world. At LastTicket, our sustainability state of mind is to achieve a good balance between ecology, economy and society as well as to create shared values for our stakeholders. We commit to driving safe and sustainable mobility for generations, safeguarding high business ethics and integrity,
+        and contributing positive impact on our planet, people and society as a whole.</p>
+</div>
+
+<div class="borderBreak"></div>
+
+<div class="about-onboard">
+    <h1>On board with us</h1>
+    <div class="onboard-flex">
+        <div class="onboard-left">
+            <div class="onboard-card">
+                <div class="onboard-icon">
+                    <img src="images/wifi.png" alt="">
+                </div>
+                <div class="onboard-text">
+                    <h3>Wi-Fi</h3>
+                    <p>You will always be able to avoid boredom thanks to our free Wi-Fi on board our buses- you can spend your journey surfing the Internet, chatting with friends and checking your emails – all at 4G speed!</p>
+                </div>
+            </div>
+            <div class="onboard-card">
+                <div class="onboard-icon">
+                    <img src="images/power.png" alt="">
+                </div>
+                <div class="onboard-text">
+                    <h3>Power outlets</h3>
+                    <p>Want to surf the Internet, chat or work on your laptop, but your battery is dead? No problem! Just look out for the socket symbol or ask our friendly drivers where to find one of the many outlets in our buses.</p>
+                </div>
+            </div>
+            <div class="onboard-card">
+                <div class="onboard-icon">
+                    <img src="images/restroom.png" alt="">
+                </div>
+                <div class="onboard-text">
+                    <h3>Restrooms*</h3>
+                    <p>Still have a few minutes until you reach your stop? No reason to be nervous! There is a restroom on board of all our buses.</p>
+                </div>
+            </div>
+        </div>
+        <div class="onboard-right">
+            <div class="onboard-card">
+                <div class="onboard-icon">
+                    <img src="images/comfort-on-board.png" alt="">
+                </div>
+                <div class="onboard-text">
+                    <h3>Comfort</h3>
+                    <p>We also guarantees you a seat with extra legroom. Our modern buses are equipped with comfortable seats and plenty of space. All seats have adjustable backrests and are comfortable even on longer trips.</p>
+                </div>
+            </div>
+            <div class="onboard-card">
+                <div class="onboard-icon">
+                    <img src="images/luggage.png" alt="">
+                </div>
+                <div class="onboard-text">
+                    <h3>Luggage</h3>
+                    <p>Our buses offer you enough space for your luggage. Store your hand luggage in the overhead compartments and our friendly drivers will assist you in loading your hold luggage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="borderBreak"></div>
+
+<div class="about-health">
+    <img src="images/health-and-safety.svg" alt="">
+    <h2>Health and Safety</h2>
+    <p> We’re taking all the necessary steps to make sure everyone on board can travel safely, but we need your help too! <br>Here are a few things you can do to keep yourself and others safe:</p>
+     <ul>
+         <li>
+             If you’re feeling sick, please don’t travel. And if you need to cough or sneeze, cover your mouth and nose with your elbow or a tissue.
+         </li>
+         <li>
+             Take it easy when you’re boarding and keep a safe distance from others.
+         </li>
+         <li>
+             Before you book your trip, make sure you check out the latest recommendations and regulations from your local health authority and government, as well as any other places you might be traveling through. And if you’re crossing international borders, it’s up to you to make sure you have all the right documents and follow the rules in each country.
+         </li>
+         <li>
+             We’ll have soap in the restrooms for you, but it’s a good idea to bring your own hand sanitizer too.
+         </li>
+         <li>
+             You can check in using our QR code scanner or by giving us your name, so there’s no need to touch anything.
+         </li>
+     </ul>
+</div>
+
+<div class="borderBreak"></div>
+<div class="top-dest-container">
+    <h3 class="title">Top Destinations and Connections</h3>
+    <div class="groupContainer">
+        <div class="leftGroup">
+            <div class="left1">
+                <ul>
+                    <li>Kumanovo</li>
+                    <li>Skopje</li>
+                    <li>Tetovo</li>
+                    <li>Gostivar</li>
+                    <li>Debar</li>
+                    <li>Kicevo</li>
+                </ul>
+            </div>
+            <div class="left2">
+                <ul>
+                    <li>Struga</li>
+                    <li>Ohrid</li>
+                    <li>Resen</li>
+                    <li>Bitola</li>
+                    <li>Krusevo</li>
+                    <li>Prilep</li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightGroup">
+            <div class="right1">
+                <ul>
+                    <li>Tirana</li>
+                    <li>Pristina</li>
+                    <li>Zagreb</li>
+                    <li>Budapest</li>
+                    <li>Belgrade</li>
+                    <li>Bucharest</li>
+                </ul>
+            </div>
+            <div class="right2">
+                <ul>
+                    <li>Milano</li>
+                    <li>Lugano</li>
+                    <li>Bern</li>
+                    <li>Zurich</li>
+                    <li>Munich</li>
+                    <li>Berlin</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <div class="footer">
+        <div class="borderBreak"></div>
+
+        <div class="footerLinks">
+            <div class="leftLinks">
+                <ul>
+                    <a href="">
+                        <li>Privacy Policy</li>
+                    </a>
+
+                    <a href="">
+                        <li>Legal Notice</li>
+                    </a>
+
+                    <a href="">
+                        <li>Cookies</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="rightLinks">
+                <p>&copy;2024 LastTicket</p>
+            </div>
+        </div>
+
+        <p class="footerNames"><a href="https://github.com/DorantVelija" class="footerNames">Dorant Velija</a> & <a href="https://github.com/artianRika" class="footerNames">Artian Rika</a> &copy;2024</p>
+    </div>
+</footer>
+</body>
+</html>

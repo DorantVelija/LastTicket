@@ -472,4 +472,12 @@ textarea:focus{
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* ABOUT PAGE */
+    .onboard-flex{
+        flex-direction: column;
+    }
+    .onboard-left,.onboard-right{
+        padding: 0;
+    }
 }

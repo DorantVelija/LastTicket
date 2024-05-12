@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 .landing-page-img{
     background-image:url("images/landing-bg.png");
     background-size: cover;
@@ -28,7 +30,6 @@
     transform: translateY(-10vh);
     color: #9DADFF;
 }
-
 .form-top, .form-bottom{
     align-items: flex-end;
 }
@@ -44,7 +45,6 @@
     margin: 1px;
     justify-content: center;
 }
-
 .inputContainer{
     display: flex;
     margin: 0 30px;
@@ -123,6 +123,9 @@ select{
 .landing-card-button{
     justify-items: flex-end;
 }
+.landing-card-button a{
+    color: #9DADFF;
+}
 #health_safety{
     border: 2px solid #9DADFF;
     border-radius: 10px;
@@ -183,6 +186,9 @@ select{
     transition: 200ms;
     cursor: pointer;
     padding-left: 20px;
+}
+.offer-right a:visited{
+    color: #ffffff;
 }
 
 .buying-tickers{
@@ -372,6 +378,12 @@ textarea:focus{
 }
 
 
+
+@media (max-width: 1010px){
+    .about-btm-banner{
+        display: none;
+    }
+}
 @media screen and (min-width: 1px) and (max-width: 768px){
     .landing-page-img h1{
         width: 90vw;
@@ -379,6 +391,7 @@ textarea:focus{
         text-align: center;
     }
     .about-btm-banner{
+        display: flex;
         height: 105vh;
     }
     .btm-banner-container{

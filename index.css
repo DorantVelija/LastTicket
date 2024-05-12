@@ -379,11 +379,17 @@ textarea:focus{
 
 
 
+/* A few special fixes */
 @media (max-width: 1010px){
     .about-btm-banner{
         display: none;
     }
+    .landing-form{
+        width: 80vw;
+    }
 }
+
+/* RESPONSIVENESS */
 @media screen and (min-width: 1px) and (max-width: 768px){
     .landing-page-img h1{
         width: 90vw;

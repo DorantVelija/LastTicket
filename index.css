@@ -1,6 +1,3 @@
-html{
-    scroll-behavior: smooth;
-}
 .landing-page-img{
     background-image:url("images/landing-bg.png");
     background-size: cover;
@@ -462,6 +459,9 @@ textarea:focus{
 
 
     /* CONTACT PAGE */
+    .contact-img{
+        background-position: 0;
+    }
     .contact-img h1{
         font-size: 1.3em;
         padding: 6vh;
@@ -498,5 +498,9 @@ textarea:focus{
     }
     .onboard-left,.onboard-right{
         padding: 0;
+    }
+    .about-img h1{
+        font-size: 1.3em;
+        padding: 6vh;
     }
 }

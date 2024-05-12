@@ -5,3 +5,10 @@
 body{
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+    color: #ffffff;
+    background-color: #5E70D0;
+}

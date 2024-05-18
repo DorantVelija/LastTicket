@@ -1,4 +1,3 @@
-
 .landing-page-img{
     background-image:url("images/landing-bg.png");
     background-size: cover;
@@ -8,11 +7,23 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    animation: onLoadLanding 2s;
 }
+@keyframes onLoadLanding {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
 .landing-form{
     width: 70vw;
     margin-left:auto;
     margin-right:auto;
+    animation: onLoadLanding 2s;
 }
 .landing-form-container{
     display: flex;
@@ -28,7 +39,6 @@
     transform: translateY(-10vh);
     color: #9DADFF;
 }
-
 .form-top, .form-bottom{
     align-items: flex-end;
 }
@@ -44,7 +54,6 @@
     margin: 1px;
     justify-content: center;
 }
-
 .inputContainer{
     display: flex;
     margin: 0 30px;
@@ -100,6 +109,7 @@ select{
     padding-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
+    animation: onLoadLanding 2s;
 }
 .landing-card{
     display: flex;
@@ -122,6 +132,9 @@ select{
 }
 .landing-card-button{
     justify-items: flex-end;
+}
+.landing-card-button a{
+    color: #9DADFF;
 }
 #health_safety{
     border: 2px solid #9DADFF;
@@ -183,6 +196,9 @@ select{
     transition: 200ms;
     cursor: pointer;
     padding-left: 20px;
+}
+.offer-right a:visited{
+    color: #ffffff;
 }
 
 .buying-tickers{
@@ -298,6 +314,92 @@ textarea:focus{
 }
 
 
+/*ABOUT PAGE*/
+.about-img{
+    background-image: url("images/public-transport-city.jpg");
+    background-size: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    height: 25vh;
+}
+.about-img h1{
+    margin: 0;
+    padding: 8vh;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.about-environment{
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #9DADFF;
+    padding: 6vh 0;
+}
+.about-onboard{
+    margin: 10vh;
+    width: 65vw;
+    color: #9DADFF;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.onboard-flex{
+    display: flex;
+    justify-content: center;
+}
+.onboard-left, .onboard-right{
+    padding: 3vh;
+}
+.onboard-card{
+    text-align: justify;
+    display: flex;
+}
+.onboard-card img{
+   padding: 10px;
+    width: 4vw;
+    height: 4vw;
+}
+.onboard-text{
+    width: 80%;
+    padding-left: 1vw;
+}
+.about-health{
+    margin: 10vh;
+    color: #9DADFF;
+    text-align: center;
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-health ul{
+    text-align: justify;
+}
+.about-health img{
+    border: 2px #9DADFF solid;
+    border-radius: 10px;
+}
+.about-network{
+    text-align: center;
+}
+.about-network img{
+    width: 65vw;
+    height: 55vw;
+}
+
+
+
+/* A few special fixes */
+@media (max-width: 1010px){
+    .about-btm-banner{
+        display: none;
+    }
+    .landing-form{
+        width: 80vw;
+    }
+}
+
+/* RESPONSIVENESS */
 @media screen and (min-width: 1px) and (max-width: 768px){
     .landing-page-img h1{
         width: 90vw;
@@ -305,6 +407,7 @@ textarea:focus{
         text-align: center;
     }
     .about-btm-banner{
+        display: flex;
         height: 105vh;
     }
     .btm-banner-container{
@@ -369,6 +472,9 @@ textarea:focus{
 
 
     /* CONTACT PAGE */
+    .contact-img{
+        background-position: 0;
+    }
     .contact-img h1{
         font-size: 1.3em;
         padding: 6vh;
@@ -397,5 +503,17 @@ textarea:focus{
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    /* ABOUT PAGE */
+    .onboard-flex{
+        flex-direction: column;
+    }
+    .onboard-left,.onboard-right{
+        padding: 0;
+    }
+    .about-img h1{
+        font-size: 1.3em;
+        padding: 6vh;
     }
 }

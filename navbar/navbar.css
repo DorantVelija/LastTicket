@@ -32,7 +32,10 @@ body{
 .smallNavbar{
     display: none;
     background-color: #9DADFF;
+    margin-top: 50px;
     width: 100%;
+    position: fixed;
+    z-index: 4;
 }
 
 .smallNavbar ul{
@@ -77,6 +80,9 @@ a{
     .navbar{
         flex-direction: row;
         align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
     }
 
     .navbar h3{

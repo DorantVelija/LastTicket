@@ -61,7 +61,81 @@
     });
 </script>
 
-        <div class="landing-page">
+
+
+
+    <div id="bus-results">
+        <div class="bus-line">
+            <div class="line-time">
+                <h1>12:30</h1>
+                <h2>From: <span class="fromCityR"></span></h2>
+                <h2>To: <span class="toCityR"></span></h2>
+                <h3>Line Euro</h3>
+            </div>
+
+
+            <div class="line-time">
+                <h1>13:00</h1>
+                <h2>From: <span class="fromCityR"></span></h2>
+                <h2>To: <span class="toCityR"></span></h2>
+                <h3>Line Euro</h3>
+            </div>
+
+            <div class="line-time">
+                <h1>14:00</h1>
+                <h2>From: <span class="fromCityR"></span></h2>
+                <h2>To: <span class="toCityR"></span></h2>
+                <h3>Line Euro</h3>
+            </div>
+
+            <button class="result-close-btn" onclick="onLineClose()">Close</button>
+        </div>
+
+    </div>
+
+<script>
+    let busResults = document.getElementById('bus-results');
+    function onLineOpen(){
+        let fromCity = document.getElementById('fromCity').value
+        let toCity = document.getElementById('toCity').value
+        let fromCityR = document.querySelectorAll('.fromCityR')
+        let toCityR = document.querySelectorAll('.toCityR')
+        let depTime = document.getElementById('fromDate').value
+        let arrTime = document.getElementById('toDate').value
+
+        console.log(depTime)
+        console.log(arrTime)
+
+        if (fromCity !== "" && toCity !== "" && depTime !=="" && arrTime !== ""){
+           if(depTime <= arrTime){
+               busResults.style.display = "flex";
+               //toCityR.innerText = toCity
+               //fromCityR.innerText = fromCity
+               fromCityR.forEach(element => {
+                   element.innerText = fromCity;
+               });
+               toCityR.forEach(element => {
+                   element.innerText = toCity;
+               });
+           }
+           else{
+               alert("Departure cannot be earlier than arrival.")
+           }
+
+        }
+        else{
+            alert("Please fill in the inputs")
+        }
+
+    }
+    function onLineClose(){
+        busResults.style.display = "none"
+    }
+</script>
+
+
+
+<div class="landing-page">
             <div class="landing-page-img">
                 <h1>1° Travel Site in
                     North Macedonia</h1>
@@ -84,11 +158,11 @@
                         <div class="inputContainer">
                             <div class="cityInput">
                             <label for="fromCity">From</label>
-                            <input type="text" name="" id="fromCity">
+                            <input type="text" name="" id="fromCity" required>
                         </div>
                             <div class="cityInput">
                                 <label for="toCity">To</label>
-                                <input type="text" name="" id="toCity">
+                                <input type="text" name="" id="toCity" required>
                             </div>
 
                         </div>
@@ -98,11 +172,11 @@
                         <div class="inputContainer">
                             <div class="dateInput">
                             <label for="fromDate">Departure</label>
-                            <input type="date" name="" id="fromDate" placeholder="From">
+                            <input type="date" name="" id="fromDate" placeholder="From" required>
                         </div>
                             <div class="dateInput">
                                 <label for="toDate">Return</label>
-                                <input type="date" name="" id="toDate" placeholder="Until">
+                                <input type="date" name="" id="toDate" placeholder="Until" required>
                             </div>
 
 
@@ -117,7 +191,7 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
-                            <input type="submit" value="Search" class="form-submit-button">
+                            <input type="button" value="Search" class="form-submit-button" onclick="onLineOpen()">
                         </div>
 
 

@@ -448,6 +448,16 @@ textarea:focus{
 }
 
 /* RESPONSIVENESS */
+@media (max-width: 800px){
+    #large-map{
+        display: none;
+    }
+    #small-map{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media screen and (min-width: 1px) and (max-width: 768px){
     .landing-page-img h1{
         width: 90vw;
@@ -566,14 +576,7 @@ textarea:focus{
     .contact-form-right-container textarea{
         width: 70vw;
     }
-    #large-map{
-        display: none;
-    }
-    #small-map{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
 
     /* ABOUT PAGE */
     .onboard-flex{

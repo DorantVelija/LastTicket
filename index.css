@@ -120,7 +120,7 @@ select{
     align-items: center;
     justify-content: space-between;
     width: 25%;
-    height: 25vh;
+    height: auto;
 }
 .landing-card div{
 
@@ -157,7 +157,7 @@ select{
 .landing-card-button:hover{
     cursor: pointer;
     color: #5E70D0;
-    font-weight: 700;
+    font-weight: 600;
     transition: 200ms;
  }
 
@@ -400,7 +400,8 @@ textarea:focus{
 .bus-line{
     display: flex;
     align-items: flex-start;
-    width: 70vw;
+    flex-direction: column;
+    height: 50vh;
     padding: 5vh;
     border-radius: 15px;
     margin: 10vh auto;
@@ -409,9 +410,10 @@ textarea:focus{
 }
 .line-time{
     width: 10vw;
+    margin: 10px;
     height: 30vh;
     padding: 2vh;
-    border: 1px solid #5E70D0;
+    border: 2px solid #5E70D0;
     border-radius: 15px;
 }
 .result-close-btn{
@@ -496,6 +498,28 @@ textarea:focus{
         margin-top: 10vh;
         width: 100%;
     }
+    .result-close-btn{
+        width: 100%;
+    }
+    .bus-line{
+        padding: 3vh;
+    }
+    .line-time{
+        margin: 5px;
+        border: none;
+        padding: 2vh;
+    }
+    .line-time h1{
+        font-size: 1rem;
+    }
+    .line-time h2{
+         font-size: 1rem;
+     }
+    .line-time h3{
+        font-size: 1rem;
+    }
+
+
     @media (max-height: 800px) and (min-width:768px){
         .landing-card-text h2{
             margin-top: 40px;

@@ -406,13 +406,14 @@ textarea:focus{
     margin: auto;
     width: 100vw;
     z-index: 99;
-    height: 70vh;
+    height: auto;
+    top: 0;
 }
 .bus-line{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    height: 50vh;
+    height: auto;
     padding: 5vh;
     border-radius: 15px;
     margin: 10vh auto;
@@ -422,7 +423,7 @@ textarea:focus{
 .line-time{
     width: 10vw;
     margin: 10px;
-    height: 30vh;
+    height: auto;
     padding: 2vh;
     border: 2px solid #5E70D0;
     border-radius: 15px;

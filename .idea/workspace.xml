@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a42705a4-73a4-408c-a435-ccf48a6cd0f3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/footer/footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/navbar/navbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +74,27 @@
       <workItem from="1717179559780" duration="2196000" />
       <workItem from="1717334642835" duration="56000" />
       <workItem from="1717334941657" duration="2439000" />
-      <workItem from="1717359858594" duration="1209000" />
+      <workItem from="1717359858594" duration="2088000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;index.css" />
+    <MESSAGE value="fixed everything except zoom" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed everything except zoom" />
   </component>
 </project>

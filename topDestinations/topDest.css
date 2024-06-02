@@ -48,6 +48,7 @@
         align-items: center;
     }
     .title{
+        align-self: auto;
         text-align: center;
     }
 }

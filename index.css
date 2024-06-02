@@ -174,7 +174,7 @@ select{
     border-radius: 10px;
     display: flex;
     width: 60vw;
-    height: 20vh;
+    min-height: 23vh;
 }
 .offer-left{
     border-bottom-left-radius: 10px;
@@ -324,7 +324,7 @@ textarea:focus{
     text-align: center;
     font-size: 2em;
     color: #ffffff;
-    height: 25vh;
+    height: auto;
 }
 .about-img h1{
     margin: 0;
@@ -401,7 +401,7 @@ textarea:focus{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    height: 50vh;
+    height: 55vh;
     padding: 5vh;
     border-radius: 15px;
     margin: 10vh auto;
@@ -411,7 +411,7 @@ textarea:focus{
 .line-time{
     width: 10vw;
     margin: 10px;
-    height: 30vh;
+    height: auto;
     padding: 2vh;
     border: 2px solid #5E70D0;
     border-radius: 15px;
@@ -557,10 +557,11 @@ textarea:focus{
     /* CONTACT PAGE */
     .contact-img{
         background-position: 0;
+        height: auto;
     }
     .contact-img h1{
-        font-size: 1.3em;
-        padding: 6vh;
+        font-size: 1.1em;
+        padding-top: 17vh;
     }
     .contact-form{
         flex-direction: column;
@@ -590,7 +591,8 @@ textarea:focus{
     }
     .about-img h1{
         font-size: 1.3em;
-        padding: 6vh;
+        padding-top: 17vh;
+
     }
 }
 

@@ -447,9 +447,13 @@ textarea:focus{
     cursor: pointer;
 }
 .about-btm-banner{
-    height: auto;
+    height: 25vh;
 }
-
+@media (max-height: 612px){
+    .about-btm-banner{
+        height: auto;
+    }
+}
 
 /* A few special fixes */
 @media (max-width: 1010px){
@@ -480,7 +484,7 @@ textarea:focus{
     }
     .about-btm-banner{
         display: flex;
-        height: 105vh;
+        height: auto;
     }
     .btm-banner-container{
         flex-direction: column;

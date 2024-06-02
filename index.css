@@ -490,6 +490,9 @@ textarea:focus{
         border-radius: 5px;
         margin: 0;
     }
+    .h-captcha{
+        width: 20vw !important;
+    }
     label{
         font-size: 1em;
     }

@@ -146,6 +146,17 @@ select{
 .landing-card-icon{
     height: 7vh;
 }
+
+@media (max-height: 768px){
+    .landing-card-icon{
+        height: 10vh;
+        margin-bottom: auto;
+
+       {
+            height: auto;
+        }
+    }
+}
 #enviromentally-friendly{
     padding-bottom: 30px;
 }
@@ -434,7 +445,9 @@ textarea:focus{
     font-weight: 700;
     cursor: pointer;
 }
-
+.about-btm-banner{
+    height: auto;
+}
 
 
 /* A few special fixes */
@@ -557,6 +570,9 @@ textarea:focus{
     /* CONTACT PAGE */
     .contact-img{
         background-position: 0;
+        background-size: cover;
+        padding-top: 5vh;
+        height: 100%;
     }
     .contact-img h1{
         font-size: 1.3em;
@@ -588,33 +604,59 @@ textarea:focus{
     .onboard-left,.onboard-right{
         padding: 0;
     }
+    .about-img{
+        background-size: cover;
+        height: 100%;
+        padding-top: 5vh;
+    }
     .about-img h1{
         font-size: 1.3em;
-        padding: 6vh;
     }
 }
 
 
-@media (max-width: 320px){
-    .landing-page-img h1{
+@media (max-width: 320px) {
+    .landing-page-img h1 {
         width: 100%;
     }
-    .landing-form{
-        width: 100%;
 
+    .landing-form {
+        width: 100%;
     }
-    input{
-         width: 100%;
+
+
+
+    input {
+        width: 100%;
         font-size: 1rem;
-     }
-    .form-top, .form-bottom{
+    }
+
+    .form-top, .form-bottom {
         width: 100%;
     }
 
+    .btm-banner-container h1 {
+        font-size: 2rem;
+    }
 
-
-
+    .btm-banner-container p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 400px ) and (max-height: 650px){
+    .landing-page-img h1{
+        font-size: 1rem;
+    }
+    .landing-form-container {
+        height: 80vh;
+    }
     .btm-banner-container div{
         padding: 0;
+    }
+    .landing-cards{
+        margin-top: 15vh;
+    }
+    .landing-card-icon{
+        height: auto;
     }
 }

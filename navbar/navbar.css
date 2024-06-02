@@ -75,6 +75,8 @@ a{
 }
 
 
+
+
 @media (max-width: 768px) {
 
     .navbar{
@@ -106,4 +108,9 @@ a{
         align-items: center;
     }
 
+}
+@media (max-width: 320px){
+    .navbar h3{
+        font-size: 1rem;
+    }
 }
